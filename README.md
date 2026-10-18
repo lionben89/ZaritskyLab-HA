@@ -23,23 +23,13 @@ model.get_embeddings(x)   # [N, D] features before the classification head
 
 ## Running in Google Colab
 
-1. Open the notebook in Colab: **File → Open notebook → GitHub**, paste
-   `https://github.com/lionben89/ZaritskyLab-HA` and pick `notebook.ipynb`.
+1. Upload and open the notebook in Google Colab
 2. Optionally enable a GPU: **Runtime → Change runtime type → T4 GPU** (the CPU is enough for inference).
 3. Run the cells in order. The setup cells install the packages (preinstalled in Colab, so this is quick) and
    `git clone` this repository, which brings `model.py`, `classifier.pt` and the images into the Colab session.
 4. Save your work: **File → Save a copy in Drive**, and download it with **File → Download → .ipynb** for submission.
 
-## Running locally
-
-```bash
-git clone https://github.com/lionben89/ZaritskyLab-HA.git
-cd ZaritskyLab-HA
-pip install -e .            # installs the dependencies and model.py
-jupyter notebook notebook.ipynb
-```
-
 ## Submission
 
-`notebook.ipynb` (executed top to bottom, plots inline) and `report.pdf`.
+`notebook.ipynb` (executed top to bottom, plots inline).
 Do **not** submit `classifier.pt` or any images.
